@@ -5,7 +5,9 @@ using namespace std;
 class Metro : public Transport
 {
 public:
-	Metro();
+	Metro() = default;
+	Metro(double weight, double MaxSpeed, double AverageSpeed, double price);
+	void Show();
 	void Comfort();
 };
 

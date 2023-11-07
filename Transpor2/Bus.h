@@ -8,7 +8,15 @@ protected:
 	int numberPassengers;
 	double maxBaggage;
 public:
-	Bus();
+	Bus() = default;
+	Bus(double weight, double MaxSpeed, double AverageSpeed, double price, int numberPassengers, double maxBaggage);
+	
+	void setNumberPassengers(int numberPassengers);
+	void setMaxBaggage(double maxBaggage);
+
+	double getMaxBaggage();
+	int getNumberPassengers();
+	void Show();
 	void Comfort();
 };
 
